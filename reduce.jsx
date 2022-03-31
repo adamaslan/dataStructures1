@@ -3,3 +3,5 @@ function reverse(str) {
     return character + reversed;
   }, "");
 }
+
+//reverse string with reduce
