@@ -5,3 +5,8 @@ function reverse(str) {
 }
 
 //reverse string with reduce
+//reverse a number
+
+function reverse1(int) {
+  return int.toString("").reverse("").parse("") * Math.sign(int);
+}
