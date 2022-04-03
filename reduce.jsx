@@ -3,12 +3,15 @@ function reverse(str) {
     return character + reversed;
   }, "");
 }
-console.log.apply(reverse((str = "pis")));
+console.log(reverse((str = "pis")));
 //reverse string with reduce
 //reverse a number
 
 function reverse1(int) {
-  return int.toString("").reverse("").parseInt("") * Math.sign(int);
+  const reversed2 = int.toString().split("").reverse().join("");
+
+  return parseInt(reversed2) * Math.sign(int);
 }
 
+console.log(reverse1((reversed2 = -20)));
 //freak
