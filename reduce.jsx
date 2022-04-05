@@ -29,16 +29,18 @@ for (let char of string) {
 
 chars;
 
+const strang = "Why Hello There";
 function findMax(strang) {
   max = 0;
   let maxChar = "";
   for (let char of strang) {
     charmap[char] = charmap[char] + 1 || 1;
   }
-  for (let in charmap) {
+  for (let char in charmap) {
     if (charmap[char] > max) {
       max = charmap[char];
       maxChar = char;
     }
+    return maxChar;
   }
 }
