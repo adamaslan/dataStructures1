@@ -1,8 +1,8 @@
 //maxChar.js;
 
-const strang = "Why Hello There";
 function maxChar(strang) {
-  max = 0;
+  const charMap = {};
+  let max = 0;
   let maxChar = "";
   for (let char of strang) {
     if (charMap[char]) {
