@@ -15,3 +15,20 @@ function reverse1(int) {
 
 console.log(reverse1((reversed2 = -20)));
 //freak
+
+const string = "Hello There";
+const chars = {};
+for (let char of string) {
+  if (!chars[char]) {
+    chars[char] = 1;
+  } else {
+    chars[char]++;
+    //increment chars at char by 1
+  }
+}
+
+chars;
+
+for (let char of string) {
+  chars[char] = chars[char] + 1 || 1;
+}
