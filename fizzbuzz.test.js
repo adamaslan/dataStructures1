@@ -1,4 +1,4 @@
-const fizzBuzzes = require("./fizzbuzz");
+const fizzBuzz = require("./fizzbuzz");
 
 test("fizzBuzz function is defined", () => {
   expect(fizzBuzz).toBeDefined();
