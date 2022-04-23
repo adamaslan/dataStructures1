@@ -18,6 +18,19 @@ class Node {
       this.head = new Node(data, this.head);
     }
   
+    size() {
+        let counter = 0;
+        let node = this.head;
+    
+        while (node) {
+          counter++;
+          node = node.next;
+        }
+    
+        return counter;
+      }
+
+
     // from free code camp
 
     size() {
