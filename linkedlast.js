@@ -43,6 +43,13 @@ class Node {
         return count;
     }
 
+    getFirst (){
+
+      return this.head;
+    }
+
+
+    //freecodecamp thangs
     clear() {
         this.head = null;
     }
