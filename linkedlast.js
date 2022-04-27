@@ -31,6 +31,34 @@ class Node {
         return counter;
       }
 
+      getLast() {
+        if (!this.head) {
+          return null;
+        }
+    
+        let node = this.head;
+        while (node) {
+          if (!node.next) {
+            return node;
+          }
+          node = node.next;
+        }
+      }
+    
+      clear() {
+        this.head = null;
+      }
+    
+      removeFirst() {
+        if (!this.head) {
+          return;
+        }
+    
+        this.head = this.head.next;
+      }
+    
+
+
 // from geeks for geeks
 // javascript program to count number of nodes in a linked list
  
