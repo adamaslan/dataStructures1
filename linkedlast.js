@@ -80,6 +80,18 @@ class Node {
       }
     
 
+      insertLast(data) {
+        const last = this.getLast();
+    
+        if (last) {
+          // There are some existing nodes in our chain
+          last.next = new Node(data);
+        } else {
+          // The chain is empty!
+          this.head = new Node(data);
+        }
+      }
+
 
 // from geeks for geeks
 // javascript program to count number of nodes in a linked list
