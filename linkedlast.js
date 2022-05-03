@@ -105,6 +105,23 @@ class Node {
         }
         return null;
       }
+
+      removeAt(index) {
+        if (!this.head) {
+          return;
+        }
+    
+        if (index === 0) {
+          this.head = this.head.next;
+          return;
+        }
+    
+        const previous = this.getAt(index - 1);
+        if (!previous || !previous.next) {
+          return;
+        }
+        previous.next = previous.next.next;
+      }
 // from geeks for geeks
 // javascript program to count number of nodes in a linked list
  
