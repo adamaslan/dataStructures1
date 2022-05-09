@@ -165,12 +165,12 @@ module.exports = { Node, LinkedList };
 // javascript program to count number of nodes in a linked list
  
 /* Linked list Node*/
-class Node {
-    constructor(val) {
-        this.data = val;
-        this.next = null;
-    }
-}
+// class Node {
+//     constructor(val) {
+//         this.data = val;
+//         this.next = null;
+//     }
+// }
  
 // Linked List class
 var head; // head of list
