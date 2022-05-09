@@ -1,10 +1,10 @@
 const maxChar = require("./maxChar");
 
-test("maxChar function exists", () => {
+test.only("maxChar function exists", () => {
   expect(typeof maxChar).toEqual("function");
 });
 
-test("Finds the most frequently used char", () => {
+test.skip("Finds the most frequently used char", () => {
   expect(maxChar("a")).toEqual("a");
   expect(maxChar("abcdefghijklmnaaaaa")).toEqual("a");
 });
