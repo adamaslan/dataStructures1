@@ -1,6 +1,7 @@
 // --- Directions
 // Given a linked list, return true if the list
 // is circular, false if it is not.
+
 // --- Examples
 //   const l = new List();
 //   const a = new Node('a');
