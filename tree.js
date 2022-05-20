@@ -31,3 +31,5 @@ class Node {
     constructor() {
       this.root = null;
     }
+
+ //add and remove via push and filter different from linked list as it is more specific to the node   
