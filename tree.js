@@ -11,25 +11,27 @@
 // function that gets called with each element in the tree
 
 class Node {
-    constructor(data) {
-      this.data = data;
-      this.children = [];
-    }
-  
-    add(data) {
-      this.children.push(new Node(data));
-    }
-  
-    remove(data) {
-      this.children = this.children.filter(node => {
-        return node.data !== data;
-      });
-    }
+  constructor(data) {
+    this.data = data;
+    this.children = [];
   }
-  
-  class Tree {
-    constructor() {
-      this.root = null;
-    }
 
- //add and remove via push and filter different from linked list as it is more specific to the node   
+  add(data) {
+    this.children.push(new Node(data));
+  }
+
+  remove(data) {
+    this.children = this.children.filter((node) => {
+      return node.data !== data;
+    });
+  }
+}
+
+class Tree {
+  constructor() {
+    this.root = null;
+  }
+}
+
+//add and remove via push and filter different from linked list as it is more specific to the node
+//technique for bredthfirst  - get first, add its children to array, take out 1first add its children to back, then call iterator function and throw it away, then add next and repeat
