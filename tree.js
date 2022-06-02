@@ -35,3 +35,13 @@ class Tree {
 
 //add and remove via push and filter different from linked list as it is more specific to the node
 //technique for bredthfirst  - get first, add its children to array, take out 1first add its children to back, then call iterator function and throw it away, then add next and repeat
+
+ traverseBF(fn) {
+    const arr = [this.root];
+    while (arr.length) {
+      const node = arr.shift();
+
+      arr.push(...node.children);
+      fn(node);
+    }
+  }
